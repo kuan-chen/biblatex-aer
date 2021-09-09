@@ -1,5 +1,9 @@
 % Use Chicago-style Bibliography and citation
-\usepackage[authordate, backend=biber, uniquename=false, noibid]{biblatex-chicago}
+\usepackage[authordate, backend=biber, uniquename=false, noibid,
+            % add a few options on top of Daniel Sullivan's orignal settings following aer.bst
+            giveninits=true,
+            doi=false, isbn=false, url=false, eprint=false
+            ]{biblatex-chicago}
 
 % % Include author names in hyperlink (default is date only)
 \DeclareFieldFormat{citehyperref}{%
